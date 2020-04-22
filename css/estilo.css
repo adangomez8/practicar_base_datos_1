@@ -1,0 +1,15 @@
+
+h1{
+    color: rgb(6, 85, 6);
+}
+header{
+    background-image: url(../img/fondoheader.jpg);
+}
+.titEncabezado{
+    margin-top: 50px;
+    margin-left: 200px;
+}
+.formDeuda{
+    margin-top: 200px;
+    margin-left: 40%;
+}
