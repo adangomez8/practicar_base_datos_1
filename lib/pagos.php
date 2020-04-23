@@ -98,8 +98,8 @@ function mostrarRegistros() {
    // echo "</thead>":
     foreach ($pagos as $pago) {
       echo "<tr>";
-        echo "<td><b>" . $pago->deudor . "</td></b><td><b>Nº". $pago->cuota . "</td></b><td><b>$" . $pago->cuota_capital . "</td></b><td><b>" . $pago->fecha_pago . "</td></b><td><button type='submit' class='borrar btn btn-outline-danger borrar'><i class='far fa-trash-alt'></i></button></td><td><button  class='pagar btn btn-outline-success pagar'><i class='fas fa-hand-holding-usd'></i></button></td>";
-        
+        echo "<td><b>" . $pago->deudor . "</td></b><td><b>Nº". $pago->cuota . "</td></b><td><b>$" . $pago->cuota_capital . "</td></b><td><b>" . $pago->fecha_pago . "</td></b><td><a href='borrar/  $pago->id_pagos 'class='borrar btn btn-outline-danger borrar'><i class='far fa-trash-alt'></i></a></td><td><a href='pagar/  $pago->id_pagos ' class='pagar btn btn-outline-success pagar'><i class='fas fa-hand-holding-usd'></a></td>";
+          
     }
     echo "</tr>";
     echo "<table>";
@@ -143,3 +143,4 @@ function crearRegistro() {
 
 
 }
+

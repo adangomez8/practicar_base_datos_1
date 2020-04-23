@@ -23,6 +23,14 @@
         case "crearRegistro": // /nueva    ->    crearRegistro()
             crearRegistro();
         break;
+
+        case 'borrar': 
+            borrarRegistro($parametros[1]);
+        break;
+
+        case 'pagar': 
+           // pagarDeuda($parametros[1]);
+        break;
     
         default: 
             echo "404 not found";
